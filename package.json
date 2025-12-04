@@ -1,0 +1,23 @@
+{
+  "name": "playwright-102-lambdatest-assignment",
+  "version": "1.0.0",
+  "description": "Playwright 102 LambdaTest certification assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "lambdaTest",
+    "hyperexecute"
+  ],
+  "author": "Mangesh Durge",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
