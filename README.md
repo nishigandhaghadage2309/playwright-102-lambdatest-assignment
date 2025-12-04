@@ -105,13 +105,13 @@ Steps:
       > Installs Playwright browsers
       > Runs Chromium tests
 > **Re-run manually:**
-    > npx playwright test
+    >npx playwright test
 
 > **Open report:**
-    > npm run test:report
+    >npm run test:report
 
 **Repository Access**
-    > Repository is Private
-    > Access shared with LambdaTest certification reviewers as instructed
+    >Repository is Private
+    >Access shared with LambdaTest certification reviewers as instructed
 
 
