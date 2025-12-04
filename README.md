@@ -87,11 +87,11 @@ playwright-102-lambdatest-assignment/
 Steps:
 1. Create a new HyperExecute project on LambdaTest
 2. Add Secrets:
-   > LT_USERNAME
-   > LT_ACCESS_KEY
+    > LT_USERNAME
+    > LT_ACCESS_KEY
 3. Connect this GitHub repository
 4. Configure pipeline to use:
-  > hyperexecute.yaml
+    > hyperexecute.yaml
 5. Trigger Job (Matrix defined for multiple OS + browsers)
   After each run, note the Job IDs here:
   HyperExecute Job IDs
