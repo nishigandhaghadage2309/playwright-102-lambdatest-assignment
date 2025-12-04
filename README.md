@@ -99,14 +99,14 @@ Steps:
     >Job 2: ___________
 
 > **Running on Gitpod**
-1️.  Open repo in Gitpod
-2.  Gitpod automatically:
+1. Open repo in Gitpod
+2. Gitpod automatically:
       > Installs dependencies
       > Installs Playwright browsers
       > Runs Chromium tests
-Re-run manually:
+> Re-run manually:
     npx playwright test
-Open report:
+> Open report:
     npm run test:report
 
 **Repository Access**
