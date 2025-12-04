@@ -1,0 +1,17 @@
+# .gitpod.yml
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Playwright 102 Setup & Test
+    init: |
+      npm ci || npm install
+      npx playwright install
+    command: |
+      # Run tests once Gitpod workspace starts
+      npx playwright test --project=chromium
+
+vscode:
+  extensions:
+    - ms-playwright.playwright
+    - dbaeumer.vscode-eslint
