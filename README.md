@@ -84,19 +84,19 @@ playwright-102-lambdatest-assignment/
         npm run test:chromium
 
 > **Running on LambdaTest HyperExecute**
-  Steps:
-    1. Create a new HyperExecute project on LambdaTest
-    2.Add Secrets:
-      > LT_USERNAME
-      > LT_ACCESS_KEY
-    3.Connect this GitHub repository
-    4.Configure pipeline to use:
-        > hyperexecute.yaml
-    5.Trigger Job (Matrix defined for multiple OS + browsers)
-      After each run, note the Job IDs here:
-      HyperExecute Job IDs
-        .Job 1: ___________
-        .Job 2: ___________
+Steps:
+1. Create a new HyperExecute project on LambdaTest
+2.Add Secrets:
+   > LT_USERNAME
+   > LT_ACCESS_KEY
+3.Connect this GitHub repository
+4.Configure pipeline to use:
+  > hyperexecute.yaml
+5.Trigger Job (Matrix defined for multiple OS + browsers)
+  After each run, note the Job IDs here:
+  HyperExecute Job IDs
+    >Job 1: ___________
+    >Job 2: ___________
 
 **Running on Gitpod**
   1. Open repo in Gitpod
