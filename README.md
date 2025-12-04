@@ -1,8 +1,8 @@
-> **Playwright 102 – LambdaTest Assignment**
+**Playwright 102 – LambdaTest Assignment**
 
 This repository contains my solution for the LambdaTest Playwright 102 certification assignment using **JavaScript + Playwright** Test.
 
-> **Tech Stack**
+**Tech Stack**
 
 Node.js
 
@@ -12,7 +12,7 @@ Gitpod (cloud development environment)
 
 LambdaTest HyperExecute (cloud execution)
 
-> **Scenarios Covered**
+**Scenarios Covered**
 
 1️. Simple Form Demo
 
@@ -43,7 +43,7 @@ Fill valid values in all mandatory fields
 Verify success message:
 “Thanks for contacting us, we will get back to you shortly.”
 
-> **Project Structure**
+**Project Structure**
 
 playwright-102-lambdatest-assignment/
 ├─ tests/
@@ -57,7 +57,7 @@ playwright-102-lambdatest-assignment/
 ├─ package.json
 └─ README.md
 
-> **Local Execution**
+**Local Execution**
 
     > Install dependencies:
           npm install
@@ -73,17 +73,17 @@ playwright-102-lambdatest-assignment/
     > Show last HTML report:
           npm run test:report
 
-> **Environment Variables Supported**
+**Environment Variables Supported**
     You can override defaults used in config/tests:
-     ** BASE_URL**
-     **CUSTOM_MESSAGE**
-
+    > BASE_URL
+    > CUSTOM_MESSAGE
+    
     Example:
         BASE_URL=https://www.lambdatest.com/selenium-playground/ \
         CUSTOM_MESSAGE="Hello LambdaTest" \
         npm run test:chromium
 
-> **Running on LambdaTest HyperExecute**
+**Running on LambdaTest HyperExecute**
 Steps:
 1. Create a new HyperExecute project on LambdaTest
 2. Add Secrets:
@@ -98,16 +98,16 @@ Steps:
     >Job 1: ___________
     >Job 2: ___________
 
-> **Running on Gitpod**
+**Running on Gitpod**
 1. Open repo in Gitpod
 2. Gitpod automatically:
       > Installs dependencies
       > Installs Playwright browsers
       > Runs Chromium tests
-> Re-run manually:
-    npx playwright test
-> Open report:
-    npm run test:report
+> **Re-run manually:**
+    > npx playwright test
+> **Open report:**
+    > npm run test:report
 
 **Repository Access**
   > Repository is Private
