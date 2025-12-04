@@ -95,8 +95,8 @@ Steps:
 5. Trigger Job (Matrix defined for multiple OS + browsers)
   After each run, note the Job IDs here:
   HyperExecute Job IDs
-    >Job 1: ___________
-    >Job 2: ___________
+    > Job 1: ___________
+    > Job 2: ___________
 
 **Running on Gitpod**
 1. Open repo in Gitpod
@@ -106,6 +106,7 @@ Steps:
       > Runs Chromium tests
 > **Re-run manually:**
     > npx playwright test
+
 > **Open report:**
     > npm run test:report
 
