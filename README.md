@@ -85,22 +85,22 @@ playwright-102-lambdatest-assignment/
 
 > **Running on LambdaTest HyperExecute**
 Steps:
-1. Create a new HyperExecute project on LambdaTest
-2.Add Secrets:
+1️. Create a new HyperExecute project on LambdaTest
+2. Add Secrets:
    > LT_USERNAME
    > LT_ACCESS_KEY
-3.Connect this GitHub repository
-4.Configure pipeline to use:
+3. Connect this GitHub repository
+4. Configure pipeline to use:
   > hyperexecute.yaml
-5.Trigger Job (Matrix defined for multiple OS + browsers)
+5. Trigger Job (Matrix defined for multiple OS + browsers)
   After each run, note the Job IDs here:
   HyperExecute Job IDs
     >Job 1: ___________
     >Job 2: ___________
 
-**Running on Gitpod**
-  1. Open repo in Gitpod
-  2. Gitpod automatically:
+> **Running on Gitpod**
+1️.  Open repo in Gitpod
+2.  Gitpod automatically:
       > Installs dependencies
       > Installs Playwright browsers
       > Runs Chromium tests
