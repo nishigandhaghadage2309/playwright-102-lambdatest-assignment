@@ -85,7 +85,7 @@ playwright-102-lambdatest-assignment/
 
 > **Running on LambdaTest HyperExecute**
 Steps:
-1️. Create a new HyperExecute project on LambdaTest
+1. Create a new HyperExecute project on LambdaTest
 2. Add Secrets:
    > LT_USERNAME
    > LT_ACCESS_KEY
