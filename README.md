@@ -111,7 +111,7 @@ Steps:
     >npm run test:report
 
 **Repository Access**
-    >Repository is Private
-    >Access shared with LambdaTest certification reviewers as instructed
+1. Repository is Private
+2. Access shared with LambdaTest certification reviewers as instructed
 
 
