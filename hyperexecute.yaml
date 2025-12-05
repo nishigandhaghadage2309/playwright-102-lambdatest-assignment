@@ -1,25 +1,24 @@
 # hyperexecute.yaml
 version: 0.2
 
+# Run on multiple OS & browsers using matrix
+runson: ${matrix.os}
+
+matrix:
+  os: [win, linux]
+  browser: [chromium, firefox]
+
 # Global timeouts
 globalTimeout: 45
 testSuiteTimeout: 30
 testSuiteStep: 15
 
-# Matrix to run on multiple OS & browsers
-matrix:
-  os: [win, linux]
-  browser: [chromium, firefox]
-
-# Runner OS
-runson: linux
-
 env:
-  # Secrets from HyperExecute UI (DO NOT hardcode here)
+  # Secrets from HyperExecute UI / CLI (do NOT hardcode)
   LT_USERNAME: ${{ .secrets.LT_USERNAME }}
   LT_ACCESS_KEY: ${{ .secrets.LT_ACCESS_KEY }}
 
-  # Example env vars used in code/config (already supported in config & tests)
+  # Env vars used by config/tests
   BASE_URL: "https://www.lambdatest.com/selenium-playground/"
   CUSTOM_MESSAGE: "Welcome to LambdaTest from HyperExecute"
 
@@ -29,7 +28,7 @@ pre:
   - npx playwright install --with-deps
 
 # Cache node_modules based on package-lock.json checksum
-cacheKey: "{{ checksum 'package-lock.json' }}"
+cacheKey: '{{ checksum "package-lock.json" }}'
 cacheDirectories:
   - node_modules
 
@@ -37,11 +36,18 @@ cacheDirectories:
 testSuites:
   - npx playwright test --project=${matrix.browser}
 
-# Artifacts – upload reports & test-results
+# Enable job report in dashboard
 report: true
+
+# Artifacts – CORRECT STRUCTURE
 uploadArtifacts:
-  - playwright-report/**
-  - test-results/**
+  - name: playwright-report
+    path:
+      - playwright-report/**
+  - name: test-results
+    path:
+      - test-results/**
+
 mergeArtifacts: true
 
 post:
