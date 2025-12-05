@@ -1,4 +1,4 @@
-FROM gitpod/workspace-node
+FROM gitpod/workspace-node:latest
 
-# Optional: update npm
+# Optional: keep npm up to date
 RUN npm install -g npm@latest
