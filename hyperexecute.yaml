@@ -14,13 +14,11 @@ testSuiteTimeout: 30
 testSuiteStep: 15
 
 env:
-  # Secrets from HyperExecute UI / CLI (do NOT hardcode)
-  LT_USERNAME: ${{ .secrets.LT_USERNAME }}
-  LT_ACCESS_KEY: ${{ .secrets.LT_ACCESS_KEY }}
-
+env:
   # Env vars used by config/tests
   BASE_URL: "https://www.lambdatest.com/selenium-playground/"
   CUSTOM_MESSAGE: "Welcome to LambdaTest from HyperExecute"
+
 
 # Install dependencies before running tests
 pre:
@@ -52,3 +50,4 @@ mergeArtifacts: true
 
 post:
   - echo "Playwright 102 suite finished on ${matrix.os} / ${matrix.browser}"
+
