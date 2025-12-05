@@ -14,7 +14,6 @@ testSuiteTimeout: 30
 testSuiteStep: 15
 
 env:
-env:
   # Env vars used by config/tests
   BASE_URL: "https://www.lambdatest.com/selenium-playground/"
   CUSTOM_MESSAGE: "Welcome to LambdaTest from HyperExecute"
@@ -50,4 +49,5 @@ mergeArtifacts: true
 
 post:
   - echo "Playwright 102 suite finished on ${matrix.os} / ${matrix.browser}"
+
 
