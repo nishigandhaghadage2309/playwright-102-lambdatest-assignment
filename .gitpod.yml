@@ -1,15 +1,20 @@
-# .gitpod.yml
 image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - name: Playwright 102 Setup & Test
+  - name: Playwright 102 Setup
     init: |
-      npm ci || npm install
-      npx playwright install
+      # Install project dependencies
+      npm install
+
+      # Install Playwright browsers + Linux dependencies
+      npx playwright install --with-deps
     command: |
-      # Run tests once Gitpod workspace starts
-      npx playwright test --project=chromium
+      echo "✅ Gitpod workspace is ready."
+      echo "Run tests with:"
+      echo "  npx playwright test --project=chromium"
+      echo "or headed:"
+      echo "  npx playwright test --project=chromium --headed"
 
 vscode:
   extensions:
